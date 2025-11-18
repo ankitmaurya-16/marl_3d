@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+\centering
+\caption{Optimized Hyperparameters for MARL-3D}
+\label{tab:optimal_hyperparameters}
+\begin{tabular}{lll}
+\hline
+\textbf{Category} & \textbf{Parameter} & \textbf{Optimal Value} \\
+\hline
+      & $\nu$ (Penalty rate) & 0.130 \\
+\hline
+Reward & Local weight & 0.60 \\
+Weights & Team weight & 0.10 \\
+       & Fairness weight & 0.30 \\
+\hline
+RL & Learning rate ($\alpha$) & 0.005 \\
+   & Discount factor ($\gamma$) & 0.90 \\
+\hline
+MARL & Buffer size & 300 \\
+     & Retention slots & 150 \\
+     & Spatial radius (m) & 120.0 \\
+\hline
+Async/3D & Grace period factor & 3.5 \\
+         & Beam tolerance & 1.20 \\
+         & $p_{ls}$ & 0.6 \\
+\hline
+\end{tabular}
+\end{table}

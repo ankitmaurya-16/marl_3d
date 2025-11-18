@@ -1,0 +1,273 @@
+
+4. 🔧 Custom Mode (select specific phases)
+   - Choose which phases to run
+   - Flexible tuning strategy
+
+5. 📊 Visualize Existing Results
+   - Load and plot previous tuning results
+
+6. ❌ Exit
+
+Enter choice (1-6): 2
+
+🔬 FULL MODE SELECTED
+   This will take 30-45 minutes...
+   Continue? (y/n): y
+
+================================================================================
+MARL-3D: COMPLETE 6-PHASE HYPERPARAMETER TUNING
+================================================================================
+
+This will sequentially optimize:
+  Phase 1: AERAP parameters (mu, nu)
+  Phase 2: Reward weights (local, team, fairness)
+  Phase 3: RL parameters (learning_rate, discount_factor)
+  Phase 4: MARL parameters (buffer, retention, radius)
+  Phase 5: Async/3D parameters (grace, beam_tol, p_ls)
+  Phase 6: Reward values (collision, discovery, penalties)  ← NEW!
+
+Estimated time: 30-50 minutes
+
+Press ENTER to start complete tuning...
+
+================================================================================
+PHASE 1: TUNING AERAP PARAMETERS (mu, nu)
+================================================================================
+Search space: 7 × 7
+Total configs: 49
+Trials per config: 3
+Total simulations: 147
+
+AERAP Tuning:   0%|                                                                                                                                                            | 0/49 [00:00<?, ?it/s^AERAP Tuning:   0%|                                                                                                                                                            | 0/49 [01:18<?, ?it/s]
+(base) ankit@Ankits-Laptop DC % clear
+(base) ankit@Ankits-Laptop DC % python hyperparameter_tuner.py
+✅ MARL-3D code imported successfully!
+
+
+================================================================================
+MARL-3D COMPREHENSIVE HYPERPARAMETER TUNING FRAMEWORK v3.0
+================================================================================
+
+🎯 Objective: Find optimal parameters for fastest convergence
+              with high discovery rate and low energy
+
+📋 Tuning Strategy:
+   Phase 1: AERAP parameters (mu, nu) - MOST CRITICAL
+   Phase 2: Reward weights (local, team, fairness)
+   Phase 3: RL parameters (learning_rate, discount_factor)
+   Phase 4: MARL parameters (buffer, retention, radius)
+   Phase 5: Async/3D parameters (grace, beam_tol, p_ls)
+
+🔧 Fixed Parameters (Hardware-Validated):
+   - Communication radius: 100m (Ubiquiti NanoStation)
+   - Mobility speeds: 3-8 m/s (DJI Matrice 600)
+   - Beamwidth: 45° (from datasheet)
+   - Clock drift: 2 ppm (Maxim DS3231)
+
+================================================================================
+SELECT TUNING MODE:
+================================================================================
+
+1. 🚀 Quick Mode (reduced search space, ~10-15 min)
+   - 3×3 AERAP grid
+   - Limited RL/MARL/Async combinations
+   - Good for initial exploration
+
+2. 🔬 Full Mode (comprehensive search, ~30-45 min)
+   - 7×7 AERAP grid
+   - Complete RL/MARL/Async search
+   - Recommended for final paper
+
+3. 🎯 AERAP Only (focus on critical params, ~15-20 min)
+   - Only tune AERAP parameters
+   - Use defaults for other parameters
+   - Fast convergence optimization
+
+4. 🔧 Custom Mode (select specific phases)
+   - Choose which phases to run
+   - Flexible tuning strategy
+
+5. 📊 Visualize Existing Results
+   - Load and plot previous tuning results
+
+6. ❌ Exit
+
+Enter choice (1-6): 2
+
+🔬 FULL MODE SELECTED
+   This will take 30-45 minutes...
+   Continue? (y/n): y
+
+================================================================================
+MARL-3D: COMPLETE 6-PHASE HYPERPARAMETER TUNING
+================================================================================
+
+This will sequentially optimize:
+  Phase 1: AERAP parameters (mu, nu)
+  Phase 2: Reward weights (local, team, fairness)
+  Phase 3: RL parameters (learning_rate, discount_factor)
+  Phase 4: MARL parameters (buffer, retention, radius)
+  Phase 5: Async/3D parameters (grace, beam_tol, p_ls)
+  Phase 6: Reward values (collision, discovery, penalties)  ← NEW!
+
+Estimated time: 30-50 minutes
+
+Press ENTER to start complete tuning...
+
+================================================================================
+PHASE 1: TUNING AERAP PARAMETERS (mu, nu)
+================================================================================
+Search space: 7 × 7
+Total configs: 49
+Trials per config: 3
+Total simulations: 147
+
+AERAP Tuning: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 49/49 [1:06:50<00:00, 81.84s/it]
+
+✅ PHASE 1 COMPLETE!
+   Best mu: 0.120
+   Best nu: 0.130
+   Avg Conv Time: 708.0 slots
+   Avg Discovery: 90.31%
+   Conv Rate: 100%
+
+================================================================================
+PHASE 2: TUNING REWARD WEIGHTS
+================================================================================
+Testing 21 weight combinations
+Trials per config: 2
+
+Reward Tuning: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 21/21 [19:16<00:00, 55.08s/it]
+
+✅ PHASE 2 COMPLETE!
+   Best Local Weight: 0.60
+   Best Team Weight: 0.10
+   Best Fairness Weight: 0.30
+
+================================================================================
+PHASE 3: TUNING RL PARAMETERS
+================================================================================
+Testing 20 RL parameter combinations
+Trials per config: 2
+
+RL Tuning: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [18:02<00:00, 54.10s/it]
+
+✅ PHASE 3 COMPLETE!
+   Best Learning Rate: 0.005
+   Best Discount Factor: 0.90
+
+================================================================================
+PHASE 4: TUNING MARL PARAMETERS
+================================================================================
+Testing 27 MARL parameter combinations
+Trials per config: 2
+
+MARL Tuning: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 27/27 [23:11<00:00, 51.55s/it]
+
+✅ PHASE 4 COMPLETE!
+   Best Buffer Size: 300
+   Best Retention Slots: 150
+   Best Spatial Radius: 120.0m
+
+================================================================================
+PHASE 5: TUNING ASYNC/3D PARAMETERS
+================================================================================
+Testing 36 Async/3D parameter combinations
+Trials per config: 2
+
+Async/3D Tuning: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 36/36 [26:19<00:00, 43.87s/it]
+
+✅ PHASE 5 COMPLETE!
+   Best Grace Period Factor: 3.5
+   Best Beam Tolerance: 1.20
+   Best p_ls: 0.6
+
+================================================================================
+PHASE 6: TUNING REWARD VALUES
+================================================================================
+This tunes the actual reward magnitudes for:
+  - Collision detection
+  - New neighbor discovery
+  - Known neighbor rediscovery
+  - Nothing heard (idle)
+
+Testing 180 reward value combinations
+Trials per config: 2
+
+Reward Value Tuning: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 180/180 [1:59:36<00:00, 39.87s/it]
+
+✅ PHASE 6 COMPLETE!
+   Best Collision Reward: 1.5
+   Best Discovery Reward: 0.8
+   Best Known Neighbor Penalty: -0.5
+   Best Nothing Penalty: -0.3
+
+================================================================================
+🎉 ALL 6 PHASES COMPLETE!
+================================================================================
+
+Total tuning time: 273.3 minutes
+
+📊 AERAP heatmaps saved: aerap_full.png
+📊 Reward weight plots saved: rewards_full.png
+📊 RL parameter plots saved: rl_full.png
+📊 Complete tuning summary saved: summary_full.png
+
+💾 Complete results saved: tuning_results_full.json
+📄 LaTeX table saved: optimal_params_full.tex
+
+================================================================================
+HOW TO USE THESE OPTIMIZED PARAMETERS
+================================================================================
+
+1️⃣  Update your NetworkConfig in marl_3d_hardware_validated.py:
+
+config = NetworkConfig()
+config.mu = 0.120
+config.nu = 0.130
+config.learning_rate = 0.005
+config.discount_factor = 0.90
+config.reward_local_weight = 0.60
+config.reward_team_weight = 0.10
+config.reward_fairness_weight = 0.30
+config.experience_buffer_size = 300
+config.experience_retention_slots = 150
+config.spatial_relevance_radius = 120.0
+config.grace_period_factor = 3.5
+config.beam_alignment_tolerance = 1.20
+config.p_ls = 0.6
+
+2️⃣  Run simulations with optimized parameters
+
+3️⃣  Report performance improvements in your paper:
+   - Convergence Time: 708.0 slots
+   - Discovery Rate: 90.3%
+   - Convergence Rate: 100%
+
+4️⃣  Include tuning methodology in paper:
+   'Hyperparameters optimized via 5-phase grid search:
+    Phase 1 (AERAP), Phase 2 (Rewards), Phase 3 (RL),
+    Phase 4 (MARL), Phase 5 (Async/3D).'
+
+================================================================================
+BASELINE COMPARISON
+================================================================================
+
+Running baseline configuration for comparison...
+
+Running optimized configuration...
+📊 Comparison plot saved: baseline_vs_optimized.png
+
+================================================================================
+✅ TUNING COMPLETE!
+================================================================================
+
+📁 Generated Files:
+   - summary_full.png
+   - aerap_full.png
+   - optimal_params_full.tex
+   - rl_full.png
+   - tuning_results_full.json
+   - rewards_full.png
+
+📊 Displaying plots...
