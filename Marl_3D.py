@@ -1116,7 +1116,7 @@ class CommunicationChannel:
         
         return received
 
-# Tracks advanced metrics for Q1 papers
+# Tracks advanced metrics for papers
 class AdvancedMetrics:
     # Initializes the metrics tracker
     def __init__(self, config: NetworkConfig):
@@ -1717,7 +1717,6 @@ def run_comprehensive_evaluation(num_trials: int = 5):
     
     print("\nResults saved to: realistic_evaluation_results.json")
     print("All parameters hardware-validated!")
-    print("Ready for honest Q1 publication!")
     
     return all_results
 
@@ -1891,8 +1890,6 @@ def main():
                 f"{result['avg_ldr']:.2f} LDR")
         
         print("\nAll results based on realistic hardware parameters")
-        print("No parameter tuning applied")
-        print("Ready for honest Q1 publication")
         
         plt.show()
     
@@ -1979,9 +1976,6 @@ def main():
     print("   - Beamwidth: 45° (from datasheet)")
     print("   - Grace Period: 3 sigma (realistic, not inflated)")
     print("   - Convergence: 90% (IEEE 800.11s standard)")
-    
-    print("\nNO PARAMETER TUNING APPLIED")
-    print("HONEST RESULTS FOR Q1 PUBLICATION")
     
     print("\n" + "="*80)
     print("For paper writing, use these honest claims:")
